@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yiming Wang"
-  avatar           : "images/we.jpg"
+  avatar           : "images/we.jpeg"
   bio              : "Lorem ipsum College"
   location         : "Beijing, China"
   employer         :
