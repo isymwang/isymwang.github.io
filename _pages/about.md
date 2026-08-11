@@ -33,7 +33,7 @@ My research interests include neural video coding (NVC) and feature coding for m
   <div class="paper-box-image"><div><div class="badge">ACM MM 2026</div><img src="images/MM2026.png" alt="DSC-SPFC overview" width="100%"></div></div>
   <div class="paper-box-text" markdown="1">
 
-**[DSC-SPFC: End-to-End Structure-Preserving Feature Coding with Dual-Stream Companding](https://scholar.google.com/scholar?q=%22DSC-SPFC%3A%20End-to-End%20Structure-Preserving%20Feature%20Coding%20with%20Dual-Stream%20Companding%22)**
+**[DSC-SPFC: End-to-End Structure-Preserving Feature Coding with Dual-Stream Companding]**
 
 Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipeng Xie, Qing Meng, Pengcheng Zhang
 
@@ -121,32 +121,9 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 
 # 👨‍🎓 Student Mentoring
 
-In collaboration with research teams at Hohai University and Nanjing Audit University, I co-mentor undergraduate and graduate students working on learned image and video compression and feature coding for machines. Every student I have co-mentored has published at least one paper in a CCF-recommended conference or journal.
+In collaboration with research teams at Hohai University and Nanjing Audit University, I co-mentor undergraduate and graduate students working on learned image and video compression and feature coding for machines. Every student I have co-mentored has published at least one paper in a CCF-recommended conference or journal. In every cohort, at least one master's student has received the National Scholarship for Master's Students.
 
-<div class="career-destinations">
-  <div class="career-group career-group--tech">
-    <div class="career-group__title"><i class="fas fa-microchip" aria-hidden="true"></i> Technology Companies</div>
-    <div class="company-grid">
-      <div class="company-card"><span class="company-card__logo"><img src="images/company-logos/huawei.svg" alt="Huawei logo"></span><span class="company-card__name">Huawei</span></div>
-      <div class="company-card"><span class="company-card__logo"><img src="images/company-logos/bytedance.svg" alt="ByteDance logo"></span><span class="company-card__name">ByteDance</span></div>
-      <div class="company-card"><span class="company-card__logo"><img src="images/company-logos/pinduoduo.png" alt="Pinduoduo logo"></span><span class="company-card__name">Pinduoduo</span></div>
-      <div class="company-card"><span class="company-card__logo"><img src="images/company-logos/vivo.svg" alt="vivo logo"></span><span class="company-card__name">vivo</span></div>
-      <div class="company-card"><span class="company-card__logo"><img src="images/company-logos/meituan.svg" alt="Meituan logo"></span><span class="company-card__name">Meituan</span></div>
-      <div class="company-card"><span class="company-card__logo company-card__logo--zyt"><img src="images/company-logos/zyt.png" alt="ZYT logo"></span><span class="company-card__name">ZYT</span></div>
-    </div>
-  </div>
-
-  <div class="career-group career-group--public">
-    <div class="career-group__title"><i class="fas fa-landmark" aria-hidden="true"></i> State-Owned Enterprises &amp; Financial Institutions</div>
-    <div class="company-grid">
-      <div class="company-card"><span class="company-card__logo"><img src="images/company-logos/nari.png" alt="NARI Group logo"></span><span class="company-card__name">NARI Group</span></div>
-      <div class="company-card"><span class="company-card__logo company-card__monogram company-card__monogram--telecom">CT</span><span class="company-card__name">Tianyi Security<br><small>China Telecom</small></span></div>
-      <div class="company-card"><span class="company-card__logo"><img src="images/company-logos/saic.png" alt="SAIC Motor logo"></span><span class="company-card__name">SAIC Motor</span></div>
-      <div class="company-card"><span class="company-card__logo company-card__monogram company-card__monogram--cmb">CMB</span><span class="company-card__name">China Merchants Bank<br><small>Nanjing Branch</small></span></div>
-      <div class="company-card"><span class="company-card__logo company-card__monogram company-card__monogram--boc">BOC</span><span class="company-card__name">Bank of China<br><small>Software Center</small></span></div>
-    </div>
-  </div>
-</div>
+Our graduates have joined <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/huawei.svg" alt="Huawei logo"></span>Huawei</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/bytedance.svg" alt="ByteDance logo"></span>ByteDance</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/pinduoduo.png" alt="Pinduoduo logo"></span>Pinduoduo</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/vivo.svg" alt="vivo logo"></span>vivo</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/meituan.svg" alt="Meituan logo"></span>Meituan</span>, <span class="company-inline"><span class="company-inline__logo company-inline__logo--zyt"><img src="images/company-logos/zyt.png" alt="ZYT logo"></span>ZYT</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/nari.png" alt="NARI Group logo"></span>NARI Group</span>, <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--telecom">CT</span>Tianyi Security (China Telecom)</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/saic.png" alt="SAIC Motor logo"></span>SAIC Motor</span>, <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--cmb">CMB</span>China Merchants Bank Nanjing Branch</span>, and <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--boc">BOC</span>Bank of China Software Center</span>.
 
 Students who are interested in multimedia compression and machine-oriented visual coding are welcome to contact me.
 
