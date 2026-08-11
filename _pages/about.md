@@ -119,13 +119,14 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 
 **Reviewer for Journals**
 
-- [*ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)*](https://dl.acm.org/journal/tomm).
-- [*Knowledge-Based Systems*](https://www.sciencedirect.com/journal/knowledge-based-systems).
-- [*Expert Systems with Applications*](https://www.sciencedirect.com/journal/expert-systems-with-applications).
-- [*Pattern Recognition*](https://www.sciencedirect.com/journal/pattern-recognition).
-- [*IEEE Transactions on Multimedia (TMM)*](https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia).
-- [*IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)*](https://ieee-cas.org/publication/tcsvt).
-- [*Neural Networks*](https://www.sciencedirect.com/journal/neural-networks).
+- [*IEEE Transactions on Multimedia (TMM)*]
+- [*IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)*]
+- [*IEEE Transactions on Broadcasting (TBC)*]
+- [*ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)*]
+- [*Pattern Recognition*]
+- [*Neural Networks*]
+- [*Knowledge-Based Systems*]
+- [*Expert Systems with Applications*]
 
 **Professional Society Service**
 
