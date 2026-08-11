@@ -26,7 +26,13 @@
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
+        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Personal Website</a></li>
+      {% endif %}
+      {% if author.nau_profile %}
+        <li><a href="{{ author.nau_profile }}"><i class="fas fa-fw fa-university" aria-hidden="true"></i> NAU Profile</a></li>
+      {% endif %}
+      {% if author.wechat_qr %}
+        <li><a href="#wechat-modal" class="wechat-trigger" data-wechat-open aria-haspopup="dialog" aria-controls="wechat-modal"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat</a></li>
       {% endif %}
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
@@ -121,7 +127,13 @@
     </ul>
       <div class="author__urls_sm">
       {% if author.uri %}
-        <a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
+        <a href="{{ author.uri }}" title="Personal Website"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.nau_profile %}
+        <a href="{{ author.nau_profile }}" title="NAU Profile"><i class="fas fa-fw fa-university" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.wechat_qr %}
+        <a href="#wechat-modal" class="wechat-trigger" data-wechat-open aria-label="Open WeChat QR code" aria-haspopup="dialog" aria-controls="wechat-modal"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>

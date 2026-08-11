@@ -107,3 +107,94 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+.pub-venue {
+    display: inline-block;
+    margin-right: .4em;
+    padding: .08em .4em;
+    color: #fff;
+    background-color: #00369f;
+    border-radius: 2px;
+    font-size: .72em;
+    font-weight: 700;
+    line-height: 1.4;
+    vertical-align: .08em;
+    white-space: nowrap;
+}
+
+body.wechat-modal-open {
+    overflow: hidden;
+}
+
+.wechat-modal[hidden] {
+    display: none;
+}
+
+.wechat-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.wechat-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .62);
+}
+
+.wechat-modal__dialog {
+    position: relative;
+    z-index: 1;
+    width: 92vw;
+    max-width: 420px;
+    max-height: 92vh;
+    overflow: auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, .28);
+    text-align: center;
+}
+
+.wechat-modal__close {
+    position: absolute;
+    top: .4rem;
+    right: .65rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #555;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.wechat-modal__close:hover,
+.wechat-modal__close:focus {
+    color: #000;
+}
+
+.wechat-modal__title {
+    margin: 0 2rem 1rem;
+    font-size: 1.25rem;
+}
+
+.wechat-modal__qr {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 68vh;
+    margin: 0 auto;
+}
+
+.wechat-modal__hint {
+    margin: 1rem 0 0;
+    color: #666;
+    font-size: .9rem;
+}

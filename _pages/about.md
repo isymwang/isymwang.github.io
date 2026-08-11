@@ -17,42 +17,88 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Hi there, I am Yiming Wang (王一鸣). I am currently a faculty member in the School of Computer Science at Nanjing Audit University. I obtained my Ph.D. degree in Computer Science and Software Engineering from Hohai University in 2025, where I had the privilege of working under the supervision of [Prof. Bin Tang (唐斌)](https://cies.hhu.edu.cn/2024/0520/c21523a280042/page.htm) and [Prof. Qian Huang (黄倩)](https://cies.hhu.edu.cn/2024/0521/c21522a280102/page.htm). 
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My academic experience was further broadened by a research internship at the Multimedia Lab of Bytedance Inc. (字节跳动多媒体实验室) in 2024, where I had the opportunity to collaborate with [Yaojun Wu (吴耀军)](https://scholar.google.com/citations?user=ffdIhlEAAAAJ&hl=en) and [Zhaobin Zhang (张召宾)](https://scholar.google.com/citations?user=p_GmN9YAAAAJ&hl=en). During this period, I worked under the guidance of [Kai Zhang (张凯)](https://scholar.google.com/citations?user=5rhIVxQAAAAJ&hl=en) and [Li Zhang (张莉)](https://scholar.google.com/citations?user=8G5-2OMAAAAJ&hl=en), whose expertise and mentorship significantly enriched my research perspective in video coding.
+
+My research interest includes neural video coding (NVC) and feature coding for machine (FCM). I have published  20+ papers <a href='https://scholar.google.com/citations?user=By3TYSwAAAAJ&hl=en&oi=ao'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2026.07*: &nbsp;🎉🎉 one paper is accepted by ACM MM. 
+- *2026.03*: &nbsp;🎉🎉 one paper is accepted by ACM TOMM. 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class="paper-box">
+  <div class="paper-box-image"><div><div class="badge">ACM MM 2026</div><img src="images/MM2026.png" alt="DSC-SPFC overview" width="100%"></div></div>
+  <div class="paper-box-text" markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+**DSC-SPFC: End-to-End Structure-Preserving Feature Coding with Dual-Stream Companding**
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipeng Xie, Qing Meng, Pengcheng Zhang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+  </div>
 </div>
+
+<div class="paper-box">
+  <div class="paper-box-image"><div><div class="badge">ACM TOMM 2026</div><img src="images/TOMM2026.png" alt="Dual-scale transformer overview" width="100%"></div></div>
+  <div class="paper-box-text" markdown="1">
+
+**Dual-Scale Transformer with Variable Bitrate Synchronization for Neural Video Compression**
+
+**Yiming Wang**, Yaojun Wu, Zhaobin Zhang, Qian Huang\*, Bin Tang, Zhangjing Yang, Kai Zhang, Li Zhang
+
+  </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class="paper-box">
+  <div class="paper-box-image"><div><div class="badge">ICME 2025</div><img src="images/ICME2025.png" alt="JPEG AI transcoding overview" width="100%"></div></div>
+  <div class="paper-box-text" markdown="1">
+
+**Efficient Local-Global Collaboration Transcoding for JPEG AI**
+
+**Yiming Wang**, Zhaobin Zhang, Yaojun Wu, Qian Huang\*, Bin Tang, Kai Zhang, Li Zhang
+
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image"><div><div class="badge">Knowledge-Based Systems 2025</div><img src="images/KBS2025.png" alt="Multiscale learned video compression overview" width="100%"></div></div>
+  <div class="paper-box-text" markdown="1">
+
+**Multiscale Motion-Aware and Spatial-Temporal-Channel Contextual Coding Network for Learned Video Compression**
+
+**Yiming Wang**, Qian Huang\*, Bin Tang, Xin Li, Xing Li
+
+  </div>
+</div>
+
+## Other Publications
+
+- <span class="pub-venue">ACM MM 2025</span> **Neural Video Compression with In-Loop Contextual Filtering and Out-of-Loop Reconstruction Enhancement**, Yaojun Wu, Chaoyi Lin, **Yiming Wang**, Semih Esenlik, Zhaobin Zhang, Kai Zhang, Li Zhang\*.
+- <span class="pub-venue">ESWA 2025</span> **STFE-VC: Spatio-Temporal Feature Enhancement for Learned Video Compression**, **Yiming Wang**, Qian Huang\*, Bin Tang, Xin Li, Xing Li.
+- <span class="pub-venue">ICASSP 2025</span> **Learned Video Compression with Refined Adaptive Flow Pyramid and Coordinate-Aware Attention**, Qian Huang, Wenting Liu, Xin Li, **Yiming Wang\***.
+- <span class="pub-venue">ICIP 2025</span> **Learned Video Compression with Spatial Correlation Priors and Hierarchical Temporal Attention**, Qian Huang, Wenchao Shan, Qian Xu, Zaipeng Xie, **Yiming Wang\***.
+- <span class="pub-venue">ICIP 2025</span> **Neighbor-Aware Feature-Driven Motion Compensation for Learned Video Compression**, Hao Lu, Qian Huang, Ziyang Yin, Zaipeng Xie, **Yiming Wang**.
+- <span class="pub-venue">ICASSP 2024</span> **Learned Video Compression with Spatial-Temporal Optimization**, **Yiming Wang**, Qian Huang\*, Bin Tang, Wenting Liu, Wenchao Shan, Qian Xu.
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2026*, Third Prize, Science and Technology Award of the Jiangsu Association for International Science and Technology Promotion.
+- *2025*, Best Paper Nominee (Top 15 Papers), IEEE International Conference on Multimedia & Expo (ICME).
+- *2025*, IEEE International Conference on Image Processing (ICIP) Travel Grant (US$1,000).
+- *2024*, Outstanding Student of Jiangsu Province.
+- *2023*, National Scholarship for Doctoral Students.
+- *2022*, First Prize, Science and Technology Award of the Jiangsu Information Technology Application Society.
+- *2019*, Jiangsu Software Scholarship (one of 42 recipients province-wide).
+- *2018*, National Scholarship for Master's Students.
+
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2019.09 – 2025.06*, Ph.D. in Computer Science and Technology, Hohai University, Nanjing, China.
+- *2016.09 – 2019.06*, M.S. in Software Engineering, Hohai University, Nanjing, China.
+- *2012.09 – 2016.06*, B.S. in Software Engineering, Jiangsu Ocean University, Lianyungang, China.
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2024.07 - 2024.12*, Multimedialab,Bytedance Inc., Beijing, China.

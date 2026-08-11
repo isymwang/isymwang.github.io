@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yiming Wang"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
-repository               : "RayeRen/acad-homepage.github.io"
+title                    : "Yiming Wang(王一鸣)"
+description              : "School of Computer Science, Nanjing Audit University"
+repository               : "isymwang/isymwang.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -22,28 +22,30 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yiming Wang"
-  avatar           : "images/we.jpeg"
-  bio              : "Lorem ipsum College"
-  location         : "Beijing, China"
+  avatar           : "images/we.png"
+  bio              : "Nanjing Audit University"
+  location         : "Nanjing, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=By3TYSwAAAAJ&hl=en&oi=ao"
   email            : "wangyiming@nau.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://isymwang.github.io"
+  nau_profile      : "https://xxgc.nau.edu.cn/2026/0106/c11054a153209/page.htm"
+  wechat_qr        : "images/wechat-qr.jpeg"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "isymwang"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/yiming-wang-558734338/"
+  linkedin         : "yiming-wang-558734338"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : "https://orcid.org/0000-0001-5683-909X"
   pinterest        :
