@@ -33,7 +33,7 @@ My research interests include neural video coding (NVC) and feature coding for m
   <div class="paper-box-image"><div><div class="badge">ACM MM 2026</div><img src="images/MM2026.png" alt="DSC-SPFC overview" width="100%"></div></div>
   <div class="paper-box-text" markdown="1">
 
-**[DSC-SPFC: End-to-End Structure-Preserving Feature Coding with Dual-Stream Companding]**
+DSC-SPFC: End-to-End Structure-Preserving Feature Coding with Dual-Stream Companding
 
 Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipeng Xie, Qing Meng, Pengcheng Zhang
 
@@ -98,17 +98,22 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 
 
 # 🎖 Honors and Awards
-- *2026*, Third Prize, Science and Technology Award of the Jiangsu Association for International Science and Technology Promotion.
+- *2026*, Third Prize, Science and Technology Award of the Jiangsu Association for International Science and Technology Promotion (1/9).
 - *2025*, Best Paper Nominee (Top 15 Papers), IEEE International Conference on Multimedia & Expo (ICME).
 - *2025*, IEEE International Conference on Image Processing (ICIP) Travel Grant (US$1,000).
 - *2024*, Outstanding Student of Jiangsu Province.
 - *2023*, National Scholarship for Doctoral Students.
-- *2022*, First Prize, Science and Technology Award of the Jiangsu Information Technology Application Society.
+- *2022*, First Prize, Science and Technology Award of the Jiangsu Information Technology Application Society (3/5).
 - *2019*, Jiangsu Software Scholarship (one of 42 recipients province-wide).
 - *2018*, National Scholarship for Master's Students.
 
 
 # 🤝 Academic Service
+
+**Professional Society Service**
+
+- Member, Technical Committee on Multimedia, China Society of Image and Graphics (CSIG).
+- Executive Committee Member, Technical Committee on Multimedia Technology, China Computer Federation (CCF).
 
 **Program Committee Member of Conferences**
 
@@ -129,10 +134,7 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 - Expert Systems with Applications
 - Neurocomputing
 
-**Professional Society Service**
 
-- Member, Technical Committee on Multimedia, China Society of Image and Graphics (CSIG).
-- Executive Committee Member, Technical Committee on Multimedia Technology, China Computer Federation (CCF).
 
 
 # 📖 Educations
