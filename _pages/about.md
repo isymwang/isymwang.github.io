@@ -108,7 +108,27 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 - *2018*, National Scholarship for Master's Students.
 
 
-# 🤝 Professional Service
+# 🤝 Academic Service
+
+**Program Committee Member of Conferences**
+
+- AAAI Conference on Artificial Intelligence (AAAI): 2026.
+- ACM International Conference on Multimedia (ACM MM): 2025–2026.
+- IEEE International Conference on Multimedia and Expo (ICME): 2024–2026.
+- IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP): 2024–2026.
+
+**Reviewer for Journals**
+
+- [*ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)*](https://dl.acm.org/journal/tomm).
+- [*Knowledge-Based Systems*](https://www.sciencedirect.com/journal/knowledge-based-systems).
+- [*Expert Systems with Applications*](https://www.sciencedirect.com/journal/expert-systems-with-applications).
+- [*Pattern Recognition*](https://www.sciencedirect.com/journal/pattern-recognition).
+- [*IEEE Transactions on Multimedia (TMM)*](https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia).
+- [*IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)*](https://ieee-cas.org/publication/tcsvt).
+- [*Neural Networks*](https://www.sciencedirect.com/journal/neural-networks).
+
+**Professional Society Service**
+
 - Member, Technical Committee on Multimedia, China Society of Image and Graphics (CSIG).
 - Executive Committee Member, Technical Committee on Multimedia Technology, China Computer Federation (CCF).
 
@@ -123,7 +143,7 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 
 In collaboration with research teams at Hohai University and Nanjing Audit University, I co-mentor undergraduate and graduate students working on learned image and video compression and feature coding for machines. Every student I have co-mentored has published at least one paper in a CCF-recommended conference or journal. In every cohort, at least one master's student has received the National Scholarship for Master's Students.
 
-Our graduates have joined <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/huawei.svg" alt="Huawei logo"></span>Huawei</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/bytedance.svg" alt="ByteDance logo"></span>ByteDance</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/pinduoduo.png" alt="Pinduoduo logo"></span>Pinduoduo</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/vivo.svg" alt="vivo logo"></span>vivo</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/meituan.svg" alt="Meituan logo"></span>Meituan</span>, <span class="company-inline"><span class="company-inline__logo company-inline__logo--zyt"><img src="images/company-logos/zyt.png" alt="ZYT logo"></span>ZYT</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/nari.png" alt="NARI Group logo"></span>NARI Group</span>, <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--telecom">CT</span>Tianyi Security (China Telecom)</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/saic.png" alt="SAIC Motor logo"></span>SAIC Motor</span>, <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--cmb">CMB</span>China Merchants Bank Nanjing Branch</span>, and <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--boc">BOC</span>Bank of China Software Center</span>.
+Our graduates have joined <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/huawei.svg" alt="Huawei logo"></span>Huawei</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/bytedance-blue.svg" alt="ByteDance logo"></span>ByteDance</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/pinduoduo-red.png" alt="Pinduoduo logo"></span>Pinduoduo</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/vivo.svg" alt="vivo logo"></span>vivo</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/meituan.svg" alt="Meituan logo"></span>Meituan</span>, <span class="company-inline"><span class="company-inline__logo company-inline__logo--zyt"><img src="images/company-logos/zyt.png" alt="ZYT logo"></span>ZYT</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/nari.png" alt="NARI Group logo"></span>NARI Group</span>, <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--telecom">CT</span>Tianyi Security (China Telecom)</span>, <span class="company-inline"><span class="company-inline__logo"><img src="images/company-logos/saic.png" alt="SAIC Motor logo"></span>SAIC Motor</span>, <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--cmb">CMB</span>China Merchants Bank Nanjing Branch</span>, and <span class="company-inline"><span class="company-inline__logo company-inline__monogram company-inline__monogram--boc">BOC</span>Bank of China Software Center</span>.
 
 Students who are interested in multimedia compression and machine-oriented visual coding are welcome to contact me.
 
