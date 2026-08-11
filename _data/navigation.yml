@@ -12,8 +12,14 @@ main:
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
+  - title: "Service"
+    url: "/#-professional-service"
+
   - title: "Educations"
     url: "/#-educations"
+
+  - title: "Mentoring"
+    url: "/#-student-mentoring"
 
   - title: "Internships"
     url: "/#-internships"

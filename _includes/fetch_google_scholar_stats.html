@@ -11,11 +11,34 @@
             if (totalCitationElement) {
                 totalCitationElement.innerHTML = ' | Citations: ' + totalCitation
             }
+
+            function normalizeTitle(title) {
+                return (title || '')
+                    .toLowerCase()
+                    .normalize('NFKD')
+                    .replace(/[^a-z0-9]+/g, ' ')
+                    .trim()
+            }
+
+            var publications = data['publications'] || {}
+            var publicationsByTitle = {}
+            Object.keys(publications).forEach(function (paperId) {
+                var publication = publications[paperId]
+                var title = publication && publication['bib'] && publication['bib']['title']
+                if (title) {
+                    publicationsByTitle[normalizeTitle(title)] = publication
+                }
+            })
+
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var publication = data['publications'][paperId]
-                if (publication) {
+                var paperTitle = element.getAttribute('data-title')
+                var publication = paperId ? publications[paperId] : null
+                if (!publication && paperTitle) {
+                    publication = publicationsByTitle[normalizeTitle(paperTitle)]
+                }
+                if (publication && publication['num_citations'] !== undefined) {
                     element.innerHTML = '| Citations: ' + publication['num_citations']
                 }
             });
