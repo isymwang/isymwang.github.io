@@ -122,6 +122,185 @@ h1:before, .anchor:before {
     white-space: nowrap;
 }
 
+.scholar-citation-badge {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    margin: .15rem 0 .55rem;
+    border: 1px solid #2f6fca;
+    border-radius: 999px;
+    background: #4285f4;
+    box-shadow: 0 3px 9px rgba(66, 133, 244, .22);
+    color: #fff !important;
+    font-size: .78em;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none !important;
+    vertical-align: middle;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.scholar-citation-badge i {
+    padding: .52rem .62rem;
+    background: rgba(255, 255, 255, .13);
+    font-size: 1.05em;
+}
+
+.scholar-citation-badge__label {
+    padding: .52rem .6rem;
+}
+
+.scholar-citation-badge__count {
+    min-width: 2.25rem;
+    padding: .52rem .65rem;
+    background: #fff;
+    color: #2d62ae;
+    text-align: center;
+}
+
+.scholar-citation-badge:hover,
+.scholar-citation-badge:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(66, 133, 244, .3);
+}
+
+.career-destinations {
+    display: grid;
+    gap: 1.15rem;
+    margin: 1.35rem 0;
+}
+
+.career-group {
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fff 0%, #f7f9fc 100%);
+    box-shadow: 0 7px 22px rgba(32, 55, 85, .08);
+}
+
+.career-group--tech {
+    border-top: 3px solid #1769aa;
+}
+
+.career-group--public {
+    border-top: 3px solid #a51c30;
+}
+
+.career-group__title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .85rem;
+    color: #26384a;
+    font-size: .92em;
+    font-weight: 700;
+}
+
+.career-group__title i {
+    color: #1769aa;
+}
+
+.career-group--public .career-group__title i {
+    color: #a51c30;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .65rem;
+}
+
+.company-card {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: .65rem;
+    padding: .72rem;
+    border: 1px solid #e7ecf2;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(32, 55, 85, .05);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.company-card__logo {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px #edf0f4;
+}
+
+.company-card__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.company-card__logo--zyt {
+    background: #31585a;
+}
+
+.company-card__monogram {
+    padding: 0;
+    color: #fff;
+    font-size: .72em;
+    font-weight: 800;
+    letter-spacing: .02em;
+}
+
+.company-card__monogram--telecom {
+    background: #1674b9;
+}
+
+.company-card__monogram--cmb {
+    background: #d71920;
+}
+
+.company-card__monogram--boc {
+    background: #a71930;
+}
+
+.company-card__name {
+    min-width: 0;
+    color: #273646;
+    font-size: .8em;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.company-card__name small {
+    color: #6f7c88;
+    font-size: .82em;
+    font-weight: 500;
+}
+
+@media (hover: hover) {
+    .company-card:hover {
+        transform: translateY(-3px);
+        border-color: #cbd7e4;
+        box-shadow: 0 8px 18px rgba(32, 55, 85, .13);
+    }
+}
+
+@include breakpoint($medium) {
+    .company-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 420px) {
+    .company-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 body.wechat-modal-open {
     overflow: hidden;
 }

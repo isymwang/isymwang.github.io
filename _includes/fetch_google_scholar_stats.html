@@ -9,7 +9,7 @@
             var totalCitation = data['citedby']
             var totalCitationElement = document.getElementById('total_cit')
             if (totalCitationElement) {
-                totalCitationElement.innerHTML = ' | Citations: ' + totalCitation
+                totalCitationElement.textContent = totalCitation
             }
 
             function normalizeTitle(title) {
