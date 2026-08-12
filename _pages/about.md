@@ -128,10 +128,10 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
 - IEEE Transactions on Broadcasting (TBC)
 - ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)
-- Pattern Recognition
-- Neural Networks
-- Knowledge-Based Systems
-- Expert Systems with Applications
+- Pattern Recognition (PR)
+- Neural Networks (NN)
+- Knowledge-Based Systems (KBS)
+- Expert Systems with Applications (ESWA)
 - Neurocomputing
 
 
