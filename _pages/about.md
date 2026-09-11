@@ -138,7 +138,7 @@ Qian Huang, Zhimu Shi, **Yiming Wang\***, Xing Li, Xin Li, Haoxuan Xiong, Zaipen
 
 
 # 📖 Educations
-- *2019.09 – 2025.06*, Ph.D. in Computer Science and Technology, Hohai University, Nanjing, China.
+- *2021.09 – 2025.06*, Ph.D. in Computer Science and Technology, Hohai University, Nanjing, China.
 - *2016.09 – 2019.06*, M.S. in Software Engineering, Hohai University, Nanjing, China.
 - *2012.09 – 2016.06*, B.S. in Software Engineering, Jiangsu Ocean University, Lianyungang, China.
 
