@@ -8,12 +8,18 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var language = 'en';
+    try { language = new URLSearchParams(location.search).get('lang') || localStorage.getItem('homepage-language') || 'en'; } catch (error) {}
+    language = language === 'zh' ? 'zh' : 'en';
+    document.documentElement.dataset.language = language;
+    document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+  })();
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/travel-map.css' | relative_url }}">
 
 <meta http-equiv="cleartype" content="on">
-<head>
-  <base target="_blank">
-</head>

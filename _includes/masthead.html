@@ -1,16 +1,14 @@
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+<header class="masthead">
+  <div class="masthead__inner-wrap site-header">
+    <a class="site-wordmark" href="#about-me" aria-label="Yiming Wang — Homepage">YW<span aria-hidden="true">.</span></a>
+    <nav class="site-navigation" aria-label="Main navigation" data-en-label="Main navigation" data-zh-label="主导航">
+      {% for link in site.data.navigation.main %}
+      <a href="{{ link.url }}"><span data-lang="en">{{ link.title }}</span><span data-lang="zh">{{ link.title_zh }}</span></a>
+      {% endfor %}
+    </nav>
+    <div class="language-switch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-language="en" aria-pressed="true" lang="en">EN</button>
+      <button type="button" data-set-language="zh" aria-pressed="false" lang="zh-CN">中文</button>
     </div>
   </div>
-</div>
+</header>

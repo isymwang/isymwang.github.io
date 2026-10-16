@@ -1,47 +1,45 @@
 <script>
-    $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            var totalCitationElement = document.getElementById('total_cit')
-            if (totalCitationElement) {
-                totalCitationElement.textContent = totalCitation
-            }
-
-            function normalizeTitle(title) {
-                return (title || '')
-                    .toLowerCase()
-                    .normalize('NFKD')
-                    .replace(/[^a-z0-9]+/g, ' ')
-                    .trim()
-            }
-
-            var publications = data['publications'] || {}
-            var publicationsByTitle = {}
-            Object.keys(publications).forEach(function (paperId) {
-                var publication = publications[paperId]
-                var title = publication && publication['bib'] && publication['bib']['title']
-                if (title) {
-                    publicationsByTitle[normalizeTitle(title)] = publication
-                }
-            })
-
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var paperTitle = element.getAttribute('data-title')
-                var publication = paperId ? publications[paperId] : null
-                if (!publication && paperTitle) {
-                    publication = publicationsByTitle[normalizeTitle(paperTitle)]
-                }
-                if (publication && publication['num_citations'] !== undefined) {
-                    element.innerHTML = '| Citations: ' + publication['num_citations']
-                }
-            });
-        });
-    })
+(function () {
+  'use strict';
+  var total = document.getElementById('total_cit');
+  if (!total) return;
+  var repository = {{ site.repository | jsonify }};
+  var cdn = 'https://cdn.jsdelivr.net/gh/' + repository + '@google-scholar-stats/gs_data.json';
+  var raw = 'https://raw.githubusercontent.com/' + repository + '/google-scholar-stats/gs_data.json';
+  var sources = {% if site.google_scholar_stats_use_cdn %}[cdn, raw]{% else %}[raw, cdn]{% endif %};
+  function fallback() {
+    total.textContent = document.documentElement.dataset.language === 'zh' ? '查看' : 'View';
+  }
+  fallback();
+  document.addEventListener('languagechange', function () { if (!total.dataset.loaded) fallback(); });
+  function normalize(title) { return (title || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, ' ').trim(); }
+  function render(data) {
+    if (!Number.isFinite(data.citedby) || data.citedby < 0) throw new Error('Invalid citation data');
+    total.textContent = data.citedby.toLocaleString('en-US');
+    total.dataset.loaded = 'true';
+    var publications = data.publications || {};
+    var titles = {};
+    Object.keys(publications).forEach(function (id) {
+      var publication = publications[id];
+      if (publication && publication.bib) titles[normalize(publication.bib.title)] = publication;
+    });
+    document.querySelectorAll('.show_paper_citations').forEach(function (element) {
+      var paper = publications[element.getAttribute('data')] || titles[normalize(element.dataset.title)];
+      if (!paper || !Number.isFinite(paper.num_citations)) return;
+      var en = document.createElement('span'); en.dataset.lang = 'en'; en.textContent = 'Citations: ' + paper.num_citations;
+      var zh = document.createElement('span'); zh.dataset.lang = 'zh'; zh.textContent = '引用：' + paper.num_citations;
+      element.replaceChildren(en, zh);
+    });
+  }
+  function load(index) {
+    if (index >= sources.length) return;
+    var controller = new AbortController();
+    var timeout = setTimeout(function () { controller.abort(); }, 6000);
+    fetch(sources[index], { signal: controller.signal }).then(function (response) {
+      if (!response.ok) throw new Error('Citation data unavailable');
+      return response.json();
+    }).then(render).catch(function () { load(index + 1); }).finally(function () { clearTimeout(timeout); });
+  }
+  load(0);
+})();
 </script>

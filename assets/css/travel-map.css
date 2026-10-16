@@ -1,0 +1,33 @@
+/* Compact travel map. Geography: Natural Earth 1:110m, public domain. */
+.travel-map {
+  margin: 3.1rem 0 1rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid #e7edf0;
+  max-width: 560px;
+}
+.page__content .travel-map h2 {
+  margin: 0 0 .2rem;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+  letter-spacing: -.015em;
+}
+.travel-map__canvas { display: block; width: 100%; height: auto; overflow: visible; margin: .45rem 0 .2rem; }
+.travel-map__land { fill: #dbe4e7; stroke: #fff; stroke-width: .6; stroke-linejoin: round; }
+.travel-map__graticule { fill: none; stroke: #edf1f3; stroke-width: .7; }
+.travel-map__point { cursor: default; outline: none; }
+.travel-map__halo { fill: #fff; opacity: .95; }
+.travel-map__dot { fill: #197b86; stroke: #fff; stroke-width: 1.4; transition: fill .15s; }
+.travel-map__point:hover .travel-map__dot, .travel-map__point:focus .travel-map__dot { fill: #114c70; stroke-width: 2; }
+.travel-map__point:focus .travel-map__halo { stroke: #197b86; stroke-width: 1.3; }
+.travel-map__label { visibility: hidden; pointer-events: none; fill: #234550; font: 600 15px system-ui, sans-serif; paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; }
+.travel-map__point:hover .travel-map__label, .travel-map__point:focus .travel-map__label { visibility: visible; }
+.page__content .travel-map__legend { margin: 0 0 .35rem; color: #5b717b; font-size: 12px; line-height: 1.8; }
+.travel-map__visit { display: inline-block; white-space: nowrap; }
+.travel-map__key { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #197b86; margin-right: .35rem; vertical-align: .08em; }
+.page__content .travel-map__note { margin: 0; color: #839098; font-size: 12px; line-height: 1.7; }
+.travel-map__note a { color: inherit; text-decoration: none; border-bottom: 1px solid #d8e0e4; }
+@media (max-width: 480px) {
+  .travel-map { margin-top: 2.4rem; }
+  .page__content .travel-map__legend { font-size: 12px; }
+}

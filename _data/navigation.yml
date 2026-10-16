@@ -1,25 +1,28 @@
-# main links links
 main:
-  - title: "About Me"
-    url: "/#about-me"
-
-  - title: "News"
-    url: "/#-news"
-
-  - title: "Publications"
-    url: "/#-publications"
-
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
-
-  - title: "Service"
-    url: "/#-academic-service"
-
-  - title: "Educations"
-    url: "/#-educations"
-
-  - title: "Mentoring"
-    url: "/#-student-mentoring"
-
-  - title: "Internships"
-    url: "/#-internships"
+  - title: About
+    title_zh: 关于我
+    url: "#about-me"
+  - title: News
+    title_zh: 动态
+    url: "#news"
+  - title: Publications
+    title_zh: 论文
+    url: "#publications"
+  - title: Honors
+    title_zh: 荣誉
+    url: "#honors"
+  - title: Service
+    title_zh: 学术服务
+    url: "#service"
+  - title: Education
+    title_zh: 教育
+    url: "#education"
+  - title: Mentoring
+    title_zh: 学生培养
+    url: "#mentoring"
+  - title: Internships
+    title_zh: 实习
+    url: "#internships"
+  - title: Footprints
+    title_zh: 足迹
+    url: "#travels"

@@ -1,0 +1,7 @@
+World land coastline data: Natural Earth, ne_110m_land.geojson (1:110 million).
+Upstream: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson
+Downloaded 2026-10-16 via public CDN: https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_110m_land.geojson
+Natural Earth data is public domain: https://www.naturalearthdata.com/about/terms-of-use/
+SVG uses the Natural Earth I projection; coastline paths are simplified for this small display.
+Country markers are approximate country-level reference positions, not claims of visited cities.
+Malaysia is marked in its peninsular portion; France is marked in metropolitan France.
