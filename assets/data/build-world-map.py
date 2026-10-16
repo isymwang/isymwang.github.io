@@ -3,6 +3,15 @@ import json, math
 from pathlib import Path
 root = Path(__file__).resolve().parents[2]
 data = json.loads((root / 'assets/data/world-land-110m.geojson').read_text())
+# City, country, Chinese city/country, conference, longitude, latitude, label offset.
+visits = [
+    ('Kuala Lumpur', 'Malaysia', '吉隆坡', '马来西亚', 'ICIP 2023', 101.6869, 3.139, -12, 20),
+    ('Seoul', 'South Korea', '首尔', '韩国', 'ICASSP 2024', 126.978, 37.5665, 12, -11),
+    ('Nantes', 'France', '南特', '法国', 'ICME 2025', -1.5536, 47.2184, 10, -14),
+    ('Barcelona', 'Spain', '巴塞罗那', '西班牙', 'ICASSP 2026', 2.1734, 41.3851, -12, 22),
+]
+visited_en = '; '.join(f'{city}, {country} ({conference})' for city, country, _, _, conference, *_ in visits)
+visited_zh = '、'.join(f'{country}{city}（{conference}）' for _, _, city, country, conference, *_ in visits)
 
 def project(pair):
     # Natural Earth I projection (Tom Patterson / Bojan Savric), radians.
@@ -38,7 +47,7 @@ for f in data['features']:
         paths.append(''.join(path(ring) for ring in poly))
 svg=['<section class="travel-map" id="travels" aria-labelledby="travel-map-title">',
 '<h2 id="travel-map-title"><span data-lang="en">Around the world</span><span data-lang="zh">我的足迹</span></h2>',
-'<svg class="travel-map__canvas" viewBox="0 0 720 370" role="img" aria-label="Visited countries: South Korea, Malaysia, France, Spain. 去过的国家：韩国、马来西亚、法国、西班牙。">',
+f'<svg class="travel-map__canvas" viewBox="0 0 720 370" role="img" aria-label="Conference visits: {visited_en}. 参会城市：{visited_zh}。">',
 '<title>World travel map · 世界足迹</title>',
 '<g class="travel-map__graticule" aria-hidden="true">']
 for lat in [-60,-30,0,30,60]:
@@ -48,13 +57,16 @@ for lon in [-120,-60,0,60,120]:
 svg.append('</g><g class="travel-map__land" aria-hidden="true">')
 svg.extend(f'<path d="{p}"/>' for p in paths)
 svg.append('</g>')
-# Approximate country-level reference positions; these do not imply any city visited.
-for en,zh,lon,lat,dx,dy in [('South Korea','韩国',127.8,36.3,12,-11),('Malaysia','马来西亚',102.0,4.5,12,20),('France','法国',2.4,46.6,10,-14),('Spain','西班牙',-3.5,40.2,-12,22)]:
+# Approximate city-center positions, using the same projection as the coastline.
+for city,country,city_zh,country_zh,conference,lon,lat,dx,dy in visits:
     x,y=project([lon,lat]); anchor='end' if dx<0 else 'start'
-    svg.append(f'<g class="travel-map__point" tabindex="0" role="img" aria-label="{en} · {zh}" transform="translate({x:.1f} {y:.1f})"><title>{en} · {zh}</title><circle class="travel-map__halo" r="7.8"/><circle class="travel-map__dot" r="4.8"/><text class="travel-map__label" x="{dx}" y="{dy}" text-anchor="{anchor}" data-lang="en">{en}</text><text class="travel-map__label" x="{dx}" y="{dy}" text-anchor="{anchor}" data-lang="zh">{zh}</text></g>')
+    description=f'{city}, {country} ({conference}) · {country_zh}{city_zh}（{conference}）'
+    svg.append(f'<g class="travel-map__point" tabindex="0" role="img" aria-label="{description}" transform="translate({x:.1f} {y:.1f})"><title>{description}</title><circle class="travel-map__halo" r="7.8"/><circle class="travel-map__dot" r="4.8"/><text class="travel-map__label" x="{dx}" y="{dy}" text-anchor="{anchor}" data-lang="en">{city}</text><text class="travel-map__label" x="{dx}" y="{dy}" text-anchor="{anchor}" data-lang="zh">{city_zh}</text></g>')
+legend_en = ' · '.join(f'<span class="travel-map__visit">{city}, {country} <span class="travel-map__conference">({conference})</span></span>' for city, country, _, _, conference, *_ in visits)
+legend_zh = ' · '.join(f'<span class="travel-map__visit">{country}{city}<span class="travel-map__conference">（{conference}）</span></span>' for _, _, city, country, conference, *_ in visits)
 svg.extend(['</svg>',
-'<p class="travel-map__legend"><span class="travel-map__key" aria-hidden="true"></span><span data-lang="en">South Korea · Malaysia · France · Spain</span><span data-lang="zh">韩国 · 马来西亚 · 法国 · 西班牙</span></p>',
-'<p class="travel-map__note"><span data-lang="en">Country-level markers</span><span data-lang="zh">以国家为单位标记</span> · <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a></p>',
+f'<p class="travel-map__legend"><span class="travel-map__key" aria-hidden="true"></span><span data-lang="en">{legend_en}</span><span data-lang="zh">{legend_zh}</span></p>',
+'<p class="travel-map__note"><span data-lang="en">Conference cities</span><span data-lang="zh">参会城市</span> · <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a></p>',
 '</section>'])
 (root/'_includes/travel-map.html').write_text('\n'.join(svg)+'\n')
 print(f'Generated {root / "_includes/travel-map.html"} ({sum(map(len,svg))} characters)')
