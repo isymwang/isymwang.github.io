@@ -122,6 +122,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #389386; outline-offs
 .paper-links { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px 16px; }
 .page__content .paper-links a { color: #2c5091; font-size: 15px; font-weight: 650; text-decoration: underline; text-underline-offset: 2px; }
 .publication-compact { padding: 21px 0; border-bottom: 1px solid var(--line); }
+.page__content > .publication-compact:last-of-type { border-bottom: 0; }
 .publication-compact .paper-box-text { width: 100%; }
 @media (min-width: 925px) and (max-width: 1100px) {
  .paper-box.publication-card { grid-template-columns: 220px minmax(0, 1fr); }

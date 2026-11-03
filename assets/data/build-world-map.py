@@ -9,6 +9,7 @@ visits = [
     ('Seoul', 'South Korea', '首尔', '韩国', 'ICASSP 2024', 126.978, 37.5665, 12, -11),
     ('Nantes', 'France', '南特', '法国', 'ICME 2025', -1.5536, 47.2184, 10, -14),
     ('Barcelona', 'Spain', '巴塞罗那', '西班牙', 'ICASSP 2026', 2.1734, 41.3851, -12, 22),
+    ('Rio de Janeiro', 'Brazil', '里约热内卢', '巴西', 'ACM MM 2026', -43.1729, -22.9068, 12, 20),
 ]
 visited_en = '; '.join(f'{city}, {country} ({conference})' for city, country, _, _, conference, *_ in visits)
 visited_zh = '、'.join(f'{country}{city}（{conference}）' for _, _, city, country, conference, *_ in visits)

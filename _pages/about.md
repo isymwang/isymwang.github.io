@@ -9,7 +9,6 @@ redirect_from:
 ---
 
 <section class="profile-intro" id="about-me">
-  <p class="intro-eyebrow"><span data-lang="en">ACADEMIC PROFILE</span><span data-lang="zh">学术主页</span></p>
   <h1 class="intro-title"><span data-lang="en">Yiming Wang <span class="intro-name-secondary">王一鸣</span></span><span data-lang="zh">王一鸣 <span class="intro-name-secondary">Yiming Wang</span></span></h1>
   <p class="intro-role"><span data-lang="en">Faculty Member · School of Computer Science<br>Nanjing Audit University</span><span data-lang="zh">南京审计大学 · 计算机学院教师</span></p>
   <div class="research-tags" aria-label="Research interests / 研究方向">
@@ -32,12 +31,52 @@ redirect_from:
 
 <h2 id="news">🔥 <span data-lang="en">News</span><span data-lang="zh">最新动态</span></h2>
 
+- *2026.11*: &nbsp;🎉 <span data-lang="en">One paper accepted by Pattern Recognition.</span><span data-lang="zh">一篇论文被 Pattern Recognition 录用。</span>
+- *2026.10*: &nbsp;🎉 <span data-lang="en">One paper accepted by IEEE SPL.</span><span data-lang="zh">一篇论文被 IEEE SPL 录用。</span>
+- *2026.09*: &nbsp;🎉 <span data-lang="en">Awarded funding under the Natural Science Foundation of Jiangsu Province (Young Scientists Fund).</span><span data-lang="zh">江苏省自然科学基金（青年科学家基金）项目获批立项。</span>
 - *2026.07*: &nbsp;🎉 <span data-lang="en">One paper accepted by ACM MM.</span><span data-lang="zh">一篇论文被 ACM MM 录用。</span>
 - *2026.03*: &nbsp;🎉 <span data-lang="en">One paper accepted by ACM TOMM.</span><span data-lang="zh">一篇论文被 ACM TOMM 录用。</span>
 
 <h2 id="publications">📝 <span data-lang="en">Publications</span><span data-lang="zh">学术论文</span></h2>
 
-<p class="publication-note"><span data-lang="en">* Corresponding author.</span><span data-lang="zh">* 表示通讯作者。</span></p>
+<p class="publication-note"><span data-lang="en"># Equal contribution. * Corresponding author.</span><span data-lang="zh"># 表示共同第一作者；* 表示通讯作者。</span></p>
+
+<article class="paper-box publication-card" id="paper-pr-2026">
+  <div class="paper-box-image"><div class="paper-thumbnail">
+    <span class="badge">Pattern Recognition 2026</span>
+    <img src="images/PR2026.png" alt="Uncertainty-aware visual coding framework for robust embodied perception" loading="lazy">
+  </div></div>
+  <div class="paper-box-text">
+    <h3 class="paper-title">Uncertainty-Aware Visual Coding for Robust Embodied Perception of Unmanned Systems</h3>
+    <p class="paper-authors"><strong>Yiming Wang</strong>, Hao Lu, Xin Li, Xing Li, Qian Huang<sup>*</sup></p>
+    <div class="paper-venue-row">
+      <span class="paper-venue">Pattern Recognition (PR 2026)</span>
+    </div>
+    <div class="paper-links">
+      <a class="scholar-link" href="https://scholar.google.com/scholar?q=Uncertainty-Aware%20Visual%20Coding%20for%20Robust%20Embodied%20Perception%20of%20Unmanned%20Systems">Google Scholar</a>
+      <span class="show_paper_citations" data-title="Uncertainty-Aware Visual Coding for Robust Embodied Perception of Unmanned Systems"></span>
+    </div>
+  </div>
+</article>
+
+<article class="paper-box publication-card" id="paper-spl-2026">
+  <div class="paper-box-image"><div class="paper-thumbnail">
+    <span class="badge">IEEE SPL 2026</span>
+    <img src="images/SPL2026.png" alt="PSFNet network architecture" loading="lazy">
+  </div></div>
+  <div class="paper-box-text">
+    <h3 class="paper-title">Patch-wise and Spatial-Frequency Collaborative Network for Lightweight Image Super-Resolution</h3>
+    <p class="paper-authors">Zhongna Ying<sup>#</sup>, <strong>Yiming Wang<sup>#</sup></strong>, Yanfang Wang<sup>*</sup>, Qian Huang<sup>*</sup></p>
+    <div class="paper-venue-row">
+      <span class="paper-venue">IEEE Signal Processing Letters (SPL 2026)</span>
+    </div>
+    <div class="paper-links">
+      <a class="code-link" href="https://github.com/isymwang/PSFNet"><span data-lang="en">Code</span><span data-lang="zh">代码</span></a>
+      <a class="scholar-link" href="https://scholar.google.com/scholar?q=Patch-wise%20and%20Spatial-Frequency%20Collaborative%20Network%20for%20Lightweight%20Image%20Super-Resolution">Google Scholar</a>
+      <span class="show_paper_citations" data-title="Patch-wise and Spatial-Frequency Collaborative Network for Lightweight Image Super-Resolution"></span>
+    </div>
+  </div>
+</article>
 
 <article class="paper-box publication-card">
   <div class="paper-box-image"><div class="paper-thumbnail">
@@ -105,7 +144,7 @@ redirect_from:
     <h3 class="paper-title">Multiscale Motion-Aware and Spatial-Temporal-Channel Contextual Coding Network for Learned Video Compression</h3>
     <p class="paper-authors"><strong>Yiming Wang</strong>, Qian Huang*, Bin Tang, Xin Li, Xing Li</p>
     <div class="paper-venue-row">
-      <span class="paper-venue">Knowledge-Based Systems, 2025</span>
+      <span class="paper-venue">Knowledge-Based Systems (KBS 2025)</span>
     </div>
     <div class="paper-links">
       <a class="paper-link" href="https://doi.org/10.1016/j.knosys.2025.113401"><span data-lang="en">Paper</span><span data-lang="zh">论文</span></a>
@@ -261,7 +300,7 @@ redirect_from:
 <article class="publication-compact">
   <div class="paper-box-text">
     <h3 class="paper-title">Neighbor-Aware Feature-Driven Motion Compensation for Learned Video Compression</h3>
-    <p class="paper-authors">Hao Lu, Qian Huang, Ziyang Yin, Zaipeng Xie, <strong>Yiming Wang</strong></p>
+    <p class="paper-authors">Hao Lu, Qian Huang<sup>*</sup>, Ziyang Yin, Zaipeng Xie, <strong>Yiming Wang</strong></p>
     <div class="paper-venue-row">
       <span class="paper-venue">IEEE International Conference on Image Processing (ICIP 2025)</span>
     </div>
@@ -273,6 +312,15 @@ redirect_from:
   </div>
 </article>
 
+
+<section class="projects-section" aria-labelledby="projects">
+  <h2 id="projects">🚀 <span data-lang="en">Projects</span><span data-lang="zh">科研项目</span></h2>
+  <ul>
+    <li><span data-lang="en">the Natural Science Foundation of Jiangsu Province (Young Scientists Fund)</span><span data-lang="zh">江苏省自然科学基金（青年科学家基金）</span></li>
+    <li><span data-lang="en">Fundamental Research Funds for the Central Universities</span><span data-lang="zh">中央高校基本科研业务费专项资金</span></li>
+    <li><span data-lang="en">Jiangsu Postgraduate Research Innovation Program (2017, 2023)</span><span data-lang="zh">江苏省研究生科研创新项目（2017，2023）</span></li>
+  </ul>
+</section>
 
 <h2 id="honors">🎖 <span data-lang="en">Honors and Awards</span><span data-lang="zh">荣誉与奖励</span></h2>
 
